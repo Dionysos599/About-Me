@@ -11,6 +11,14 @@ A modern, responsive portfolio website built with React and Tailwind CSS. Featur
 5. **Education**: Academic background and skills
 6. **Contact**: Contact form and social links
 
+## 👤 Author
+
+**Hinyeung Lam**
+- Email: hinyeung599@outlook.com
+- GitHub: [@Dionysos599](https://github.com/Dionysos599)
+- LinkedIn: [Hin Yeung Lam](https://www.linkedin.com/in/hin-yeung-lam-93287a256)
+- Game Studio: [ooink.fun](https://ooink.fun)
+
 ## 📁 Project Structure
 
 ```
@@ -102,14 +110,6 @@ This creates a `build` folder with optimized production files.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
-
-**Hinyeung Lam**
-- Email: hinyeung599@outlook.com
-- GitHub: [@Dionysos599](https://github.com/Dionysos599)
-- LinkedIn: [Hin Yeung Lam](https://www.linkedin.com/in/hin-yeung-lam-93287a256)
-- Portfolio: [ooink.fun](https://ooink.fun)
 
 ---
 
