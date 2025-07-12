@@ -4,11 +4,17 @@ import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import projectsData from '../data/projects.json';
 
+// Import images
+import nimbusImage from '../assets/images/Nimbus.png';
+import lanternImage from '../assets/images/Lantern.PNG';
+import musicBoxImage from '../assets/images/MusicBox.png';
+import foodExpressImage from '../assets/images/FoodExpress.png';
+
 const projectImages = [
-  '/images/Nimbus.png',
-  '/images/Lantern.PNG',
-  '/images/MusicBox.png',
-  '/images/FoodExpress.png',
+  nimbusImage,
+  lanternImage,
+  musicBoxImage,
+  foodExpressImage,
 ];
 
 const Projects = () => {
