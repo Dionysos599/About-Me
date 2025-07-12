@@ -70,25 +70,6 @@ Update the JSON files in `src/data/` to modify content:
 
 All other stylings can be found in `src/index.css` and other css files.
 
-### Adding Animations
-Use Framer Motion for animations:
-```jsx
-import { motion } from 'framer-motion';
-
-const variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
-};
-
-<motion.div
-  variants={variants}
-  initial="hidden"
-  animate="visible"
->
-  Content
-</motion.div>
-```
-
 ## 🏗️ Build for Production
 
 ```bash
@@ -96,16 +77,6 @@ npm run build
 ```
 
 This creates a `build` folder with optimized production files.
-
-### GitHub Pages
-1. Add "homepage": "https://Dionysos599.github.io/About-Me" to package.json
-2. Install gh-pages: `npm install --save-dev gh-pages`
-3. Add scripts to package.json:
-```json
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -d build"
-```
-4. Deploy: `npm run deploy`
 
 ## 📄 License
 
