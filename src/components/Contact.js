@@ -51,12 +51,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const formId = process.env.REACT_APP_FORMSPREE_ID || 'xvgrenqk';
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setFormData({ name: '', email: '', message: '' });
+        alert('Thank you for your message! I\'ll get back to you soon.');
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Sorry, there was an error sending your message. Please try again or contact me directly via email.');
+    } finally {
       setIsSubmitting(false);
-      setFormData({ name: '', email: '', message: '' });
-      alert('Thank you for your message! I\'ll get back to you soon.');
-    }, 1000);
+    }
   };
 
   return (
@@ -147,7 +167,7 @@ const Contact = () => {
                     </motion.a>
 
                     <motion.a
-                      href={resumeData.portfolio}
+                      href={resumeData.studio}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, Linkedin, FileText, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, ExternalLink } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 const Hero = () => {
@@ -88,7 +88,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href={resumeData.portfolio}
+              href={resumeData.studio}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -96,7 +96,7 @@ const Hero = () => {
               className="flex items-center gap-2 btn-primary"
             >
               <ExternalLink size={20} />
-              Portfolio
+              Studio
             </motion.a>
           </motion.div>
 
