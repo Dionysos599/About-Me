@@ -42,33 +42,21 @@ src/
 
 ## 📦 Development Instruction
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Dionysos599/About-Me.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies, start the server, and open in browser**
    ```bash
    npm install
-   ```
-
-3. **Start the development server**
-   ```bash
    npm start
    ```
+   and navigate to `http://localhost:3000`
 
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-5. **Styling**
-The color scheme can be customized in `tailwind.config.js`  
-Update the JSON files in `src/data/` to modify content:
-    - `aboutMe.json`: Bio and interests
-    - `projects.json`: Project information and links
-    - `resume.json`: Personal info, experience, education, and skills
-
-All other stylings can be found in `src/index.css` and other css files.
+2. **Styling**  
+   The color scheme can be customized in `tailwind.config.js`  
+   Update the JSON files in `src/data/` to modify content:
+   - `aboutMe.json`: Bio and interests  
+   - `projects.json`: Project information and links  
+   - `resume.json`: Personal info, experience, education, and skills
+   
+   All other stylings can be found in `src/index.css` and other CSS files.
 
 ## 🏗️ Build for Production
 
@@ -81,7 +69,3 @@ This creates a `build` folder with optimized production files.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Built with ❤️ using React and Tailwind CSS 
