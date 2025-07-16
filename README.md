@@ -1,6 +1,6 @@
 # Hinyeung Lam - Portfolio Website
 
-A modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations, clean design, and professional presentation of projects and experience.
+[A modern, responsive portfolio website](https://dionysos599.github.io/About-Me/) built with React and Tailwind CSS. Features smooth animations, clean design, and professional presentation of projects and experience.  
 
 ## 📋 Sections
 
