@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Calendar, ExternalLink } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 const Experience = () => {
