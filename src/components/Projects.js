@@ -96,9 +96,8 @@ const Projects = () => {
           <motion.div
             ref={scrollerRef}
             variants={itemVariants}
-            className="flex gap-6 overflow-x-auto pb-6 scrollbar-hide"
+            className="flex gap-6 overflow-x-auto pb-6"
             style={{
-              scrollbarWidth: 'none',
               msOverflowStyle: 'none',
             }}
           >
@@ -197,12 +196,6 @@ const Projects = () => {
           </motion.div>
         </motion.div>
       </div>
-
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 };
