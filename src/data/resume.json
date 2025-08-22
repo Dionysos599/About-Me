@@ -2,14 +2,14 @@
   "name": "Hinyeung Lam",
   "email": "hinyeung599@outlook.com",
   "location": "Seattle, WA",
-  "linkedin": "https://www.linkedin.com/in/hin-yeung-lam-93287a256",
+  "linkedin": "https://www.linkedin.com/in/hinyeunglam",
   "github": "https://github.com/Dionysos599",
   "studio": "https://ooink.fun",
   "education": {
     "school": "University of Washington",
     "degree": "B.S. in Computer Science",
-    "gpa": "3.94 / 4.0",
-    "duration": "Sept 2022 – June 2026"
+    "gpa": "3.93 / 4.0",
+    "duration": "Sep 2022 – Jun 2026"
   },
   "experience": [
     {
@@ -24,9 +24,21 @@
       ]
     },
     {
-      "title": "Software Engineer Intern",
+      "title": "Software Engineer Internship",
+      "company": "American Plus Bank",
+      "duration": "Jul 2025 - Aug 2025",
+      "tech": ["Java", "Spring Boot", "React", "Python", "PostgreSQL"],
+      "summary": [
+        "Developed a monitoring system with real-time parameter controls.",
+        "Built dashboard for Network Security with API tracking",
+        "Implemented CI/CD with GitHub Actions packaging Windows exe.",
+        "Piloted system achieving 6 new clients and 9% increase in one month."
+      ]
+    },
+    {
+      "title": "Software Engineer Internship",
       "company": "NetDragon Websoft Holdings Ltd.",
-      "duration": "Jul 2024 – Sept 2024",
+      "duration": "Jul 2024 – Sep 2024",
       "tech": ["Unreal Engine", "Python", "OpenAI API", "LangChain"],
       "summary": [
         "Created interactive CG scenes and AI agents for classrooms.",
@@ -36,7 +48,7 @@
     }
   ],
   "skills": [
-    "Java", "Python", "C#", "C++", "JavaScript","React", "Spring Boot", "Express",
-    "Unity", "Unreal Engine", "PostgreSQL", "AWS", "LangChain"
+    "C#", "C++", "Unity", "Unreal Engine", "Java", "Python", "TypeScript", "React.js", "Spring Boot",
+    "PostgreSQL", "AWS", "LangChain"
   ]
 } 
