@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
@@ -18,11 +18,37 @@ const projectImages = [
 ];
 
 const Projects = () => {
+  const scrollerRef = useRef(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
   const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  // Mouse wheel → horizontal scrolling (desktop enhancement)
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    // Use non-passive listener to preventDefault vertical scrolling
+    const onWheel = (e) => {
+      const absX = Math.abs(e.deltaX);
+      const absY = Math.abs(e.deltaY);
+      if (absY <= absX) return;
+
+      // Map vertical scroll amount to horizontal (adjustable multiplier)
+      const scrollAmount = e.deltaY;
+      if (el.scrollBy) {
+        el.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      } else {
+        el.scrollLeft += scrollAmount;
+      }
+      e.preventDefault();
+    };
+
+    el.addEventListener('wheel', onWheel, { passive: false });
+    return () => el.removeEventListener('wheel', onWheel);
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -68,6 +94,7 @@ const Projects = () => {
           </motion.div>
 
           <motion.div
+            ref={scrollerRef}
             variants={itemVariants}
             className="flex gap-6 overflow-x-auto pb-6 scrollbar-hide"
             style={{
